@@ -1,5 +1,5 @@
 start = enter
-guide = escape
+back = escape
 
 # Movimientos
 up = up
