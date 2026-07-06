@@ -25,7 +25,7 @@ The controller-to-keyboard mapping below is the one shipped in `cylindrix.gptk`.
 | **R1** | Left Ctrl | Fire laser |
 | **R2** | Space | Fire missile |
 | **START** | Enter | Confirm / menu select |
-| **GUIDE** (Home) | Escape | Back / quit menu |
+| **BACK** (Home) | Escape | Back / quit menu |
 
 
 If you want to remap anything, edit `cylindrix.gptk` next to the binary — no recompile needed.
