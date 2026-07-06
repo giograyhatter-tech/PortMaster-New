@@ -8,7 +8,29 @@
 
 Cylindrix is a **3-vs-3** combat game set inside cylindrical arenas, with a retro Tron-style aesthetic of flat polygons and saturated colors. You don't fly alone: you pilot your own ship, command two AI wingmen, and your goal is to take down the enemy team's radar base, capture pylons, and survive while the opposing team tries to do the same to you. Movement is fully free on all three axes, the pace is fast, and the difference between winning and losing comes down to picking the right ship, giving the right orders to your wingmen, and reading the arena, rather than pure aim. A weird and very 90s hybrid between dogfighter, arena shooter, and pocket-sized RTS.
 
+## Controls
 
+The controller-to-keyboard mapping below is the one shipped in `cylindrix.gptk`. The game itself still listens for keyboard input — gptokeyb translates each handheld button into the corresponding key press.
+
+| Handheld button | Sent key | In-game action |
+|---|---|---|
+| D-Pad ↑ ↓ ← → | Arrow keys | Steering / menu navigation |
+| Left analog stick | Arrow keys (same as D-Pad) | Steering / menu navigation |
+| **A** | `A` | Accelerate (air mode) |
+| **B** | `Z` | Decelerate (air mode) |
+| **X** | `X` | Special weapon |
+| **Y** | `V` | Change view |
+| **L1** | Left Alt | Sidestep |
+| **L2** | `S` | Toggle mode (air / ground) |
+| **R1** | Left Ctrl | Fire laser |
+| **R2** | Space | Fire missile |
+| **START** | Enter | Confirm / menu select |
+| **GUIDE** (Home) | Escape | Back / quit menu |
+| L3 / R3 (stick click) | Mouse left / right | *(optional, unused in-game)* |
+
+If you want to remap anything, edit `cylindrix.gptk` next to the binary — no recompile needed.
+
+---
 ## Project history
 
 - **1996** — Original MS-DOS release by Goldtree Enterprises, developed by Hyper Image Productions / Hotwarez LLC. Credited programmers include John R. McCawley III, Chris W. Bankston, Joel H. Hunter, and D. J. Delorie.
@@ -39,29 +61,6 @@ This fork carries a number of fixes specific to running the game on handhelds wi
 
 ---
 
-## Controls
-
-The controller-to-keyboard mapping below is the one shipped in `cylindrix.gptk`. The game itself still listens for keyboard input — gptokeyb translates each handheld button into the corresponding key press.
-
-| Handheld button | Sent key | In-game action |
-|---|---|---|
-| D-Pad ↑ ↓ ← → | Arrow keys | Steering / menu navigation |
-| Left analog stick | Arrow keys (same as D-Pad) | Steering / menu navigation |
-| **A** | `A` | Accelerate (air mode) |
-| **B** | `Z` | Decelerate (air mode) |
-| **X** | `X` | Special weapon |
-| **Y** | `V` | Change view |
-| **L1** | Left Alt | Sidestep |
-| **L2** | `S` | Toggle mode (air / ground) |
-| **R1** | Left Ctrl | Fire laser |
-| **R2** | Space | Fire missile |
-| **START** | Enter | Confirm / menu select |
-| **GUIDE** (Home) | Escape | Back / quit menu |
-| L3 / R3 (stick click) | Mouse left / right | *(optional, unused in-game)* |
-
-If you want to remap anything, edit `cylindrix.gptk` next to the binary — no recompile needed.
-
----
 
 ## Credits
 
