@@ -5,8 +5,7 @@
 # (ArkOS & Rocknix compatible)
 # ======================
 
-# Avoid unintended GLX
-export SDL_HINT_VIDEO_X11_FORCE_EGL=1
+
 
 # ======================
 # Detect PortMaster control folder
@@ -47,7 +46,8 @@ if [ -f "${controlfolder}/libgl_${CFW_NAME}.txt" ]; then
 else
   source "${controlfolder}/libgl_default.txt"
 fi
-
+# Avoid unintended GLX
+export SDL_HINT_VIDEO_X11_FORCE_EGL=1
 # ======================
 # Prepare Execution
 # ======================
@@ -63,9 +63,8 @@ export SDL_GAMECONTROLLERCONFIG="$sdl_controllerconfig"
 # ======================
 # Optional fixes for missing platform helpers
 # ======================
-if type pm_platform_helper >/dev/null 2>&1; then
-  pm_platform_helper "$GAMEDIR/cylindrix.${DEVICE_ARCH}"
-fi
+pm_platform_helper "$GAMEDIR/cylindrix.${DEVICE_ARCH}"
+
 
 # ======================
 # Launch port
@@ -77,6 +76,5 @@ $GPTOKEYB "cylindrix.${DEVICE_ARCH}" -c "./cylindrix.gptk" &
 # ======================
 # Cleanup
 # ======================
-if type pm_finish >/dev/null 2>&1; then
-  pm_finish
-fi
+pm_finish
+
