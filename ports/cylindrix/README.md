@@ -48,19 +48,20 @@ The binary is produced at `build/cylindrix`. Rename it to `cylindrix.aarch64` an
 - `libglm-dev`
 - A driver with OpenGL ES 2.0 support (Mali, VideoCore VI, Adreno, etc.)
 
----
-
-## Changes vs upstream
-
-This fork carries a number of fixes specific to running the game on handhelds with sway/Wayland or KMSDRM:
-
-| File | Changes |
-|---|---|
-| `src/system/sdl/system.cpp` | Fullscreen by default (`SDL_WINDOW_FULLSCREEN_DESKTOP`); CLI flags `-window` / `-fullscreen`; query the real drawable size via `SDL_GL_GetDrawableSize` + `glViewport` (the image no longer stays in a corner); `SDL_WINDOWEVENT_SIZE_CHANGED` handler (the upstream one used SDL1's `SDL_VIDEORESIZE`); event-driven input instead of polling with `SDL_GetKeyboardState` (fixes short presses dropped in menus, typical of START/SELECT through gptokeyb); diagnostics routed through `stderr` to bypass `tee` buffering; window title cleaned up. |
-| `src/glescylindrix.cpp` | Ortho matrix matched to the quad aspect (1.333) instead of the screen aspect — the image stretches edge-to-edge with no pillarbox bars on 16:9 displays; removed a per-frame `printf` that was flooding the log. |
 
 ---
 
+## Compile instructions
+
+
+
+git clone --recursive https://github.com/giograyhatter-tech/cylindrix.git
+cd cylindrix
+mkdir build && cd build
+cmake ..
+cmake --build . -j$(nproc)
+
+---
 
 ## Credits
 
