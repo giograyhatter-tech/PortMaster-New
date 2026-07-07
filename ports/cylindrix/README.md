@@ -55,11 +55,11 @@ The binary is produced at `build/cylindrix`. Rename it to `cylindrix.aarch64` an
 
 
 
-git clone --recursive https://github.com/giograyhatter-tech/cylindrix.git
-cd cylindrix
-mkdir build && cd build
-cmake ..
-cmake --build . -j$(nproc)
+git clone --recursive https://github.com/giograyhatter-tech/cylindrix.git \n
+cd cylindrix \n
+mkdir build && cd build \n
+cmake .. \n
+cmake --build . -j$(nproc) \n
 
 ---
 
