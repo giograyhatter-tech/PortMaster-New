@@ -3,7 +3,8 @@
 `aarch64` port of the classic 3D combat game **Cylindrix** (Goldtree Enterprises, 1996), adapted for handhelds in the **PortMaster** ecosystem (Rocknix, ArkOS, AmberELEC, JELOS, Knulli, etc.) on top of OpenGL ES 2.0.
 
 ---
-
+[!LOGO](screenshot.jpg)
+---
 ## Quick overview
 
 Cylindrix is a **3-vs-3** combat game set inside cylindrical arenas, with a retro Tron-style aesthetic of flat polygons and saturated colors. You don't fly alone: you pilot your own ship, command two AI wingmen, and your goal is to take down the enemy team's radar base, capture pylons, and survive while the opposing team tries to do the same to you. Movement is fully free on all three axes, the pace is fast, and the difference between winning and losing comes down to picking the right ship, giving the right orders to your wingmen, and reading the arena, rather than pure aim. A weird and very 90s hybrid between dogfighter, arena shooter, and pocket-sized RTS.
