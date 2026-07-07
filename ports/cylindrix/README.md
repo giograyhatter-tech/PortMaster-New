@@ -3,7 +3,7 @@
 `aarch64` port of the classic 3D combat game **Cylindrix** (Goldtree Enterprises, 1996), adapted for handhelds in the **PortMaster** ecosystem (Rocknix, ArkOS, AmberELEC, JELOS, Knulli, etc.) on top of OpenGL ES 2.0.
 
 ---
-[!LOGO](screenshot.jpg)
+(screenshot.jpg)
 ---
 ## Quick overview
 
