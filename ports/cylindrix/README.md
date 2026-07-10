@@ -1,14 +1,14 @@
-# Cylindrix — ARM / handheld port
+## Cylindrix — ARM / handheld port
 
 `aarch64` port of the classic 3D combat game **Cylindrix** (Goldtree Enterprises, 1996), adapted for handhelds in the **PortMaster** ecosystem (Rocknix, ArkOS, AmberELEC, JELOS, Knulli, etc.) on top of OpenGL ES 2.0.
 
 
 ---
-## Quick overview
+### Quick overview
 
 Cylindrix is a **3-vs-3** combat game set inside cylindrical arenas, with a retro Tron-style aesthetic of flat polygons and saturated colors. You don't fly alone: you pilot your own ship, command two AI wingmen, and your goal is to take down the enemy team's radar base, capture pylons, and survive while the opposing team tries to do the same to you. Movement is fully free on all three axes, the pace is fast, and the difference between winning and losing comes down to picking the right ship, giving the right orders to your wingmen, and reading the arena, rather than pure aim. A weird and very 90s hybrid between dogfighter, arena shooter, and pocket-sized RTS.
 
-## Controls
+### Controls
 
 The controller-to-keyboard mapping below is the one shipped in `cylindrix.gptk`. The game itself still listens for keyboard input — gptokeyb translates each handheld button into the corresponding key press.
 
@@ -31,7 +31,7 @@ The controller-to-keyboard mapping below is the one shipped in `cylindrix.gptk`.
 If you want to remap anything, edit `cylindrix.gptk` next to the binary — no recompile needed.
 
 ---
-## Project history
+### Project history
 
 - **1996** — Original MS-DOS release by Goldtree Enterprises, developed by Hyper Image Productions / Hotwarez LLC. Credited programmers include John R. McCawley III, Chris W. Bankston, Joel H. Hunter, and D. J. Delorie.
 - **2001** — John R. McCawley III obtains permission to release the game and its source code under the **LGPL**, together with an updated Windows build.
@@ -51,7 +51,7 @@ The binary is produced at `build/cylindrix`. Rename it to `cylindrix.aarch64` an
 
 ---
 
-## Compile instructions
+### Compile instructions
 
 
 
@@ -63,7 +63,7 @@ cmake --build . -j$(nproc)
 
 ---
 
-## Credits
+### Credits
 
 - **Goldtree Enterprises / Hyper Image Productions / Hotwarez LLC** — original game (1996).
 - **John R. McCawley III** — LGPL release (2001).
@@ -72,7 +72,7 @@ cmake --build . -j$(nproc)
 
 
 
-## Sources
+### Sources
 
 - Official description — [Internet Archive: *Cylindrix* (Goldtree Enterprises)](https://archive.org/details/cylindrix12_18_2001)
 - Development data and technical info — [MobyGames: *Cylindrix (1996)*](https://www.mobygames.com/game/1205/cylindrix/)
